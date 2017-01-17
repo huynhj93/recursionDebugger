@@ -457,15 +457,17 @@ var string =
     console.log('===================================');
     // console.log(sourceStr);
     // console.log(source);
-    console.log(pp(source));
+    // console.log(pp(source));AAA
     // console.log(string);
     // console.log(pp(string));
     // console.log((parse(string)));
     // console.log(pp(parse(string)));
     console.log('====================================');
     var test = transform(source, { filename: 'testFile' });
-    console.log(pp(test));
-    console.log('after transformation ===============');
+    // console.log(pp(test));aaa
+    console.log('after trans formation ===============');
+    // console.log(pp(string));aaa
+    console.log('-------------------------------------------------------')
     assertEqualsAST(test, expected);
     //assert(true);
   });
