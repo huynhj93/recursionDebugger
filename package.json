@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "cross-env BABEL_DISABLE_CACHE=1 mocha --compilers js:babel-register test",
+    "test": "cross-env BABEL_DISABLE_CACHE=1 mocha --compilers js:babel-register tests",
     "test:watch": "npm run test -- --watch"
   },
   "babel": {
