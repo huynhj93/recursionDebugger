@@ -5,11 +5,13 @@
   "scripts": {
     "test": "mocha --compilers js:babel-core/register --recursive",
     "test:watch": "npm run test -- --watch",
-    "bundle": "webpack -w"
+    "bundle": "webpack -w",
+    "start": "nodemon server/index.js"
   },
   "babel": {
     "presets": [
-      "es2015"
+      "es2015",
+      "react"
     ]
   },
   "keywords": [],
@@ -24,11 +26,13 @@
     "chai": "^3.5.0",
     "js-object-pretty-print": "^0.2.0",
     "jsonpretty": "0.0.1",
-    "mocha": "^3.2.0"
+    "mocha": "^3.2.0",
+    "webpack": "^1.14.0"
   },
   "dependencies": {
     "babel-preset-stage-1": "^6.22.0",
     "browser-history": "^1.0.1",
+    "express": "^4.14.0",
     "react": "^15.4.2",
     "react-dom": "^15.4.2",
     "react-redux": "^5.0.2",
